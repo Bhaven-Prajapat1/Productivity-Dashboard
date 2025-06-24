@@ -29,6 +29,7 @@ section.allElems {
   display: flex;
   justify-content: space-around;
   gap: 10px;
+  position: absolute;
 }
 .elems {
   border-radius: 10px;
@@ -41,17 +42,41 @@ section.allElems {
   position: relative;
   transition: all ease 0.2s;
   color: black;
+  cursor: pointer;
+  box-shadow: 0 5px 20px rgba(198, 172, 172, 0.2);
 }
 .elems img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.elems h2{
+.elems h2 {
   position: absolute;
   bottom: 4%;
   right: 5%;
 }
-.elems:active{
-    scale: 0.93;
+.elems:active {
+  scale: 0.93;
+}
+.fullElems {
+  height: 100%;
+  width: 100%;
+  background-color: #1c1c1c;
+  font-size: 30px;
+  padding: 30px;
+  display: none;
+  position: absolute;
+}
+.close{
+  position: absolute;
+  right:5%;
+  top: 5%;
+  color:red;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  cursor: pointer;
+}
+.close:active{
+  scale: 0.96;
 }
